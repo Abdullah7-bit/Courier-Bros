@@ -4,7 +4,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
         <li class="nav-item">
-            <a class="nav-link " href="index.html">
+            <a class="nav-link " href="index.php">
                 <i class="bi bi-grid"></i>
                 <span>Dashboard</span>
             </a>
@@ -14,10 +14,15 @@
             <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
                 <i class="bi bi-menu-button-wide"></i><span>Agent</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
-            <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="#">
-                        <i class="bi bi-circle"></i><span>Create Agent</span>
+                    <a href="agent.php">
+                        <i class="bi bi-circle"></i><span>Agent Details</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="agent_login.php">
+                        <i class="bi bi-circle"></i><span>Agent Login</span>
                     </a>
                 </li>
                 <li>
@@ -52,7 +57,7 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <li>
-                <a href="#">
+                <a href="customers_details.php">
                     <i class="bi bi-circle"></i><span>Manage Customer Details</span>
                 </a>
             </li>

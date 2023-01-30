@@ -11,12 +11,7 @@
 
     <div class="pagetitle">
       <h1>Dashboard</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
-        </ol>
-      </nav>
+      
     </div><!-- End Page Title -->
 
     <section class="section dashboard">
@@ -92,6 +87,7 @@
               </div>
 
             </div><!-- End Customers Card -->
+            
             <!-- Revenue Card -->
             <div class="col-xxl-4 col-md-4">
               <div class="card info-card revenue-card">
@@ -113,6 +109,7 @@
 
               </div>
             </div><!-- End Revenue Card -->
+            
             <!-- Revenue Card -->
             <div class="col-xxl-4 col-md-4">
               <div class="card info-card revenue-card">
@@ -134,6 +131,7 @@
 
               </div>
             </div><!-- End Revenue Card -->
+            
             <!-- Revenue Card -->
             <div class="col-xxl-4 col-md-4">
               <div class="card info-card revenue-card">
@@ -155,6 +153,7 @@
 
               </div>
             </div><!-- End Revenue Card -->
+          
           </div>
         </div><!-- End Left side columns -->
       </div><!-- End Right side columns -->

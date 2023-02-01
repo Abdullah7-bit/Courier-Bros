@@ -68,7 +68,7 @@ if (isset($_POST['add_agent_login'])) {
     $password = $_POST['password'];
     $role = "agent";
 
-    $query = " INSERT INTO `admin_login`(`username`, `password`, `role`) VALUES ('$email','$password','$role')";
+    $query = " INSERT INTO `users`(`username`, `password`, `role`) VALUES ('$email','$password','$role')";
 
     if (mysqli_query($con, $query)) {
         echo "Track Added successfully!!";

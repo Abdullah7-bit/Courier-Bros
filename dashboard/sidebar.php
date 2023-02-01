@@ -26,7 +26,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="manage_agent.php">
                         <i class="bi bi-circle"></i><span>Manage Agent</span>
                     </a>
                 </li>
@@ -42,7 +42,7 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <li>
-                <a href="#">
+                <a href="sms.php">
                     <i class="bi bi-circle"></i><span>Send Delivery Details</span>
                 </a>
             </li>
@@ -71,12 +71,12 @@
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <li>
                 <a href="#">
-                    <i class="bi bi-circle"></i><span>All Courier Details</span>
+                    <i class="bi bi-circle"></i><span>Courier Stats</span>
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <i class="bi bi-circle"></i><span>Couirer MAnagement</span>
+                <a href="courier_details.php">
+                    <i class="bi bi-circle"></i><span>Couirer Details</span>
                 </a>
             </li>
 

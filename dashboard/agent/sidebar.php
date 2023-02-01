@@ -21,7 +21,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="courier_details.php">
             <i class="bi bi-circle"></i><span>All courier Details</span>
           </a>
         </li>

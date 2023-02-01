@@ -1,5 +1,5 @@
 -- Table for User registration
-CREATE TABLE user (
+CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
@@ -12,12 +12,12 @@ CREATE TABLE courier (
     sender_name VARCHAR(255) NOT NULL,
     sender_address VARCHAR(255) NOT NULL,
     sender_phone VARCHAR(255) NOT NULL,
-    recipient_name VARCHAR(255) NOT NULL,
-    recipient_address VARCHAR(255) NOT NULL,
-    recipient_phone VARCHAR(255) NOT NULL,
-    weight FLOAT NOT NULL,
-    status VARCHAR(255) NOT NULL,
-    agent_id INT NOT NULL,
+    receiver_name VARCHAR(255) NOT NULL,
+    receiver_address VARCHAR(255) NOT NULL,
+    receiver_phone VARCHAR(255) NOT NULL,
+    weight VARCHAR(255) NOT NULL,
+    status VARCHAR(255),
+    agent_id INT,
     FOREIGN KEY (agent_id) REFERENCES agent(agent_id)
 );
 

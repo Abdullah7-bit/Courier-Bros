@@ -70,9 +70,11 @@ if (isset($_POST['add_agent_login'])) {
 
     $query = " INSERT INTO `users`(`username`, `password`, `role`) VALUES ('$email','$password','$role')";
 
+    
+
     if (mysqli_query($con, $query)) {
         echo "Track Added successfully!!";
-        echo "<script> window.location.href ='index.php' </script>";
+        echo "<script> window.location.href ='manage_agent.php' </script>";
       } else {
         echo "Track not added";
       }

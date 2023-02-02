@@ -32,14 +32,6 @@
             <input type="text" class="form-control" id="inputNanme4" name="name">
           </div>
           <div class="col-12">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" name="email">
-          </div>
-          <div class="col-12">
-            <label for="inputPassword4" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" name="password">
-          </div>
-          <div class="col-12">
             <label for="phone" class="form-label">Phone:</label>
             <input type="text" class="form-control" placeholder="Phone" name="phone">
           </div>
@@ -52,9 +44,7 @@
             <input type="text" class="form-control" id="inputAddress" name="address" placeholder="1234 Main St">
           </div>
           <div class="text-center">
-
-            <input type="submit" name="add_agent" class="btn btn-primary" value="Submit">
-            <button type="reset" class="btn btn-secondary">Reset</button>
+            <input type="submit" name="add_agent" class="btn btn-primary" value="Submit">            
           </div>
         </form><!-- Vertical Form -->
 

@@ -90,7 +90,7 @@
         </a>
         <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <li>
-                <a href="#">
+                <a href="reports.php">
                     <i class="bi bi-circle"></i><span>Download Shipment Reports</span>
                 </a>
             </li>

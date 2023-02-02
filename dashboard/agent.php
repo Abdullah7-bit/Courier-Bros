@@ -70,10 +70,7 @@ if (isset($_POST['add_agent'])) {
   $branch = $_POST['branch'];
   $address = $_POST['address'];
 
-
-
   $query = " INSERT INTO `agent`(`name`, `address`, `phone`, `branch`) VALUES ('$name','$address','$phone','$branch')";
-
 
 
   if (mysqli_query($con, $query)) {

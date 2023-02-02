@@ -15,6 +15,7 @@ include('connect.php');
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+              <h6 class="card-title text-center pb-0 fs-4 text-primary">Step 01 of 02</h6>
 
               <div class="card mb-3">
 
@@ -31,24 +32,13 @@ include('connect.php');
                       <input type="email" name="email" class="form-control" id="email" required>
                       <div class="invalid-feedback">Please enter a valid Email adddress!</div>
                     </div>
-
-
-
-
                     <div class="col-12">
                       <label for="password" class="form-label">Password</label>
                       <input type="password" name="password" class="form-control" id="password" required>
                       <div class="invalid-feedback">Please enter your password!</div>
                     </div>
 
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
-                        <label class="form-check-label" for="acceptTerms">I agree and accept the <a href="#">terms and
-                            conditions</a></label>
-                        <div class="invalid-feedback">You must agree before submitting.</div>
-                      </div>
-                    </div>
+
                     <div class="col-12">
                       <button class="btn btn-primary w-100" type="submit" value="Submit">Next Step</button>
                     </div>
@@ -70,6 +60,7 @@ include('connect.php');
     </div>
   </main><!-- End #main -->
 </body>
+
 </html>
 
 <?php
@@ -87,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // (Note: This is just an example and should not be used in production without proper security measures)
     $query = "INSERT INTO users (username, role, password) VALUES ('$email', 'user', '$password')";
     if (mysqli_query($con, $query)) {
-      echo "<script> window.location.href ='login.php' </script>";
+      echo "<script> window.location.href ='customer_details.php' </script>";
     } else {
       echo 'Error: ' . mysqli_error($con);
     }

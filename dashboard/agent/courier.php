@@ -25,16 +25,16 @@
                             </div>
                             <div class="col-md-12">
                                 <label for="inputName5" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="inputName5" name="sendername">
+                                <input type="text" class="form-control" id="inputName5" name="sendername" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="inputPhone" class="form-label">Phone</label>
-                                <input type="text" class="form-control" id="inputPhone" name="senderphone">
+                                <input type="text" class="form-control" id="inputPhone" name="senderphone" required>
                             </div>
                             <div class="col-12">
                                 <label for="inputAddress5" class="form-label">Address</label>
                                 <input type="text" class="form-control" id="inputAddres5s" name="senderaddress"
-                                    placeholder="1234 Main St">
+                                    placeholder="1234 Main St" required>
                             </div>
 
                             <div class="col-md-12">
@@ -45,16 +45,16 @@
                             </div>
                             <div class="col-md-12">
                                 <label for="inputName5" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="inputName5" name="receivername">
+                                <input type="text" class="form-control" id="inputName5" name="receivername" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="inputPhone" class="form-label">Phone</label>
-                                <input type="text" class="form-control" id="inputPhone" name="receiverphone">
+                                <input type="text" class="form-control" id="inputPhone" name="receiverphone" required>
                             </div>
                             <div class="col-12">
                                 <label for="inputAddress5" class="form-label">Address</label>
                                 <input type="text" class="form-control" id="inputAddres5s" name="receiveraddress"
-                                    placeholder="1234 Main St">
+                                    placeholder="1234 Main St" required>
                             </div>
 
                             <div class="col-md-12">
@@ -65,7 +65,7 @@
                             </div>
                             <div class="col-12">
                                 <label for="inputWeight" class="form-label">Weight</label>
-                                <input type="text" class="form-control" id="inputWeight" name="weight" placeholder="kg">
+                                <input type="text" class="form-control" id="inputWeight" name="weight" placeholder="kg" required>
                             </div>
 
                             <div class="col-md-12">
@@ -77,7 +77,7 @@
                             <div class="col-12">
                                 <label for="inputStatus" class="form-label">Status</label>
                                 <input type="text" class="form-control" id="inputWeight" name="status"
-                                    placeholder="At Branch / Dispatched / Deleivered">
+                                    placeholder="At Branch / Dispatched / Deleivered" required>
                             </div>
                             <!-- Foreign Key Work -->
                             <div class="col-12">
@@ -86,16 +86,14 @@
                                     <option>Select Items</option>
                                     <?php
 
-                                    $sql = "SELECT agent.name
-                                    FROM courier
-                                    RIGHT JOIN agent ON courier.agent_id = agent.agent_id";
+                                    $sql = "select * from agent";
                                     $rs = mysqli_query($con, $sql);
                                     
                                     if (mysqli_num_rows($rs) > 0) {
                                         while ($data = mysqli_fetch_array($rs)) {
                                             ?>
 
-                                            <option value="<?= $data['agent_id'] ?>"><?= $data['name'] ?></option>
+                                            <option value="<?= $data['agent_id']?>"><?= $data['name']?></option>
 
                                             <?php
                                         }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-        <title></title>
+        <title>About Us</title>
         
         <?php include 'link.php';?>
 

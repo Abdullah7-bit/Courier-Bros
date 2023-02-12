@@ -3,7 +3,11 @@
 
 <?php include 'link.php';?>
 
-
+<head>
+  <title>
+    Courier Bros
+  </title>
+</head>
 <body>
   <!-- ======= Header ======= -->
 

@@ -3,7 +3,7 @@ include('connect.php');
 ?>
 <!DOCTYPE html>
 <html>
-<title></title>
+<title>Registration</title>
 
 <?php include 'link.php'; ?>
 

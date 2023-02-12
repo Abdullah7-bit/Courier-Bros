@@ -7,7 +7,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets_theme1/img/favicon.png" rel="icon">
+  <link href="assets_theme1/img/fa.png" rel="icon">
   <link href="assets_theme1/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->

@@ -6,6 +6,7 @@ include('connect.php');
 
 <head>
   <?php include 'link.php'; ?>
+  <title>Customer Details</title>
 </head>
 
 <body>

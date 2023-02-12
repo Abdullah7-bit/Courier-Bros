@@ -70,11 +70,6 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <li>
-                <a href="#">
-                    <i class="bi bi-circle"></i><span>Courier Stats</span>
-                </a>
-            </li>
-            <li>
                 <a href="courier_details.php">
                     <i class="bi bi-circle"></i><span>Couirer Details</span>
                 </a>

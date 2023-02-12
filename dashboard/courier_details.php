@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title></title>
+<title>Courier Details</title>
 
 <head>
   <?php include('../connect.php') ?>
@@ -41,18 +41,25 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Brandon Jacob</td>
-              <td>Designer</td>
-              <td>28</td>
-              <td>2016-05-25</td>
-              <td>2016-05-25</td>
-              <td>2016-05-25</td>
-              <td>2016-05-25</td>
-              <td>2016-05-25</td>
-              <td>2016-05-25</td>
-            </tr>
+            <?php
+            $sql = "SELECT * FROM `courier`";
+            $rs = mysqli_query($con, $sql);
+            while ($data = mysqli_fetch_array($rs)) {
+              ?>
+              <tr>
+                <th scope="row"><?= $data['courier_id'] ?></th>
+                <td><?= $data['sender_name'] ?></td>
+                <td><?= $data['sender_address'] ?></td>
+                <td><?= $data['sender_phone'] ?></td>
+                <td><?= $data['receiver_name'] ?></td>
+                <td><?= $data['receiver_address'] ?></td>
+                <td><?= $data['receiver_phone'] ?></td>
+                <td><?= $data['weight'] ?></td>
+                <td><?= $data['status'] ?></td>
+                <td><?= $data['agent_id'] ?></td>
+              </tr>
+
+            <?php } ?>
           </tbody>
         </table>
         <!-- End Bordered Table -->

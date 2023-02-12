@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title></title>
+<title>Customer Details</title>
 
 <head>
     <?php include('../connect.php') ?>
@@ -18,80 +18,86 @@
     <main id="main" class="main">
 
         <section class="section dashboard">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Table with stripped rows</h5>
+
+                    <!-- Table with stripped rows -->
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $sql = "SELECT * FROM `customer`";
+                            $rs = mysqli_query($con, $sql);
+                            while ($data = mysqli_fetch_array($rs)) {
+                                ?>
+                                <tr>
+                                    <th scope="row">
+                                        <?= $data['customer_id'] ?>
+                                    </th>
+                                    <td>
+                                        <?= $data['name'] ?>
+                                    </td>
+                                    <td>
+                                        <?= $data['address'] ?>
+                                    </td>
+                                    <td>
+                                        <?= $data['phone'] ?>
+                                    </td>
+                                    <td><a href="customers_details.php?del_id=<?= $data['customer_id'] ?>"
+                                            class="btn btn-outline-danger"><b>Delete</b></a> </td>
+                                </tr>
+                                <?php
+                            }
+                            ?>
+                        </tbody>
+                    </table>
+                    <!-- End Table with stripped rows -->
+
+                </div>
+            </div>
 
 
 
 
 
-<div class="card">
-    <div class="card-body">
-        <h5 class="card-title">Table with stripped rows</h5>
+        </section>
 
-        <!-- Table with stripped rows -->
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Position</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Start Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Brandon Jacob</td>
-                    <td>Designer</td>
-                    <td>28</td>
-                    <td>2016-05-25</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Bridie Kessler</td>
-                    <td>Developer</td>
-                    <td>35</td>
-                    <td>2014-12-05</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Ashleigh Langosh</td>
-                    <td>Finance</td>
-                    <td>45</td>
-                    <td>2011-08-12</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Angus Grady</td>
-                    <td>HR</td>
-                    <td>34</td>
-                    <td>2012-06-11</td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Raheem Lehner</td>
-                    <td>Dynamic Division Officer</td>
-                    <td>47</td>
-                    <td>2011-04-19</td>
-                </tr>
-            </tbody>
-        </table>
-        <!-- End Table with stripped rows -->
-
-    </div>
-</div>
+    </main>
 
 
 
-
-
-</section>
-
-</main>
-
-
-
-<?php include('footer.php') ?>
+    <?php include('footer.php') ?>
 </body>
 
 </html>
+
+<!-- delete record from table logins-->
+
+<?php
+
+if (isset($_GET['del_id'])) {
+
+    $customer_id = $_GET['del_id'];
+
+    $sql = "DELETE FROM customer WHERE customer_id = '$customer_id'";
+
+    if (mysqli_query($con, $sql)) {
+        echo "<script> window.location.href ='customers_details.php' </script>";
+
+    } else {
+        echo "not deleted";
+    }
+
+
+}
+
+?>

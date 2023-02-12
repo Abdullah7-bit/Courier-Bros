@@ -1,5 +1,5 @@
 <html>
-<title></title>
+<title>Reports</title>
 
 <?php include 'link_agent.php'; ?>
 
@@ -18,11 +18,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Datatables</h5>
-                            <p>Add lightweight datatables to your project with using the <a
-                                    href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple
-                                    DataTables</a> library. Just add <code>.datatable</code> class name to any table you
-                                wish to conver to a datatable</p>
+                            <h5 class="card-title">Reports</h5>                            
                             <div
                                 class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
                                 <div class="dataTable-top">

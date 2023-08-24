@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title></title>
+<title>Update Agent Details</title>
 
 <head>
   <?php include('../connect.php') ?>

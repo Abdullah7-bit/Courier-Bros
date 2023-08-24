@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title></title>
+<title>Manage Agent</title>
 
 <head>
   <?php include('../connect.php') ?>

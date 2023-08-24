@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title></title>
+<title>SMS Service</title>
 
 <head>
   <?php include('../connect.php') ?>

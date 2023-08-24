@@ -20,13 +20,13 @@ session_start();
         if (!isset($_SESSION['role'])) {
           echo '
             <li><a href="about.php">About</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="services.php">Pricing</a></li>
             <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
               <ul>
-                <li><a href="#">Packers & Movers</a></li>
-                <li><a href="#">Courier services</a></li>
-                <li><a href="#">Custom Clearing</a></li>
-                <li><a href="#">Cargo Insurance</a></li>
+              <li><a href="services.php">Packers & Movers</a></li>
+              <li><a href="services.php">Courier services</a></li>
+              <li><a href="services.php">Custom Clearing</a></li>
+              <li><a href="services.php">Cargo Insurance</a></li>
               </ul>
             </li>
             <li><a href="contact.php">Contact</a></li>
@@ -39,13 +39,13 @@ session_start();
           if ($user == "user") {
             echo '
               <li><a href="about.php">About</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="services.php">Pricing</a></li>
               <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="#">Packers & Movers</a></li>
-                  <li><a href="#">Courier services</a></li>
-                  <li><a href="#">Custom Clearing</a></li>
-                  <li><a href="#">Cargo Insurance</a></li>
+                  <li><a href="services.php">Packers & Movers</a></li>
+                  <li><a href="services.php">Courier services</a></li>
+                  <li><a href="services.php">Custom Clearing</a></li>
+                  <li><a href="services.php">Cargo Insurance</a></li>
                 </ul>
               </li>
               <li><a href="contact.php">Contact</a></li>

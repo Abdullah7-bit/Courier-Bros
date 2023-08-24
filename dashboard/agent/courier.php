@@ -1,5 +1,5 @@
 <html>
-<title></title>
+<title>Add Courier</title>
 
 <?php include('connect.php'); ?>
 <?php include 'link_agent.php'; ?>

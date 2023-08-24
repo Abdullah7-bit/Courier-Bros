@@ -1,5 +1,5 @@
 <html>
-<title></title>
+<title>SMS Service</title>
 
 <?php include 'link_agent.php'; ?>
 
@@ -54,10 +54,11 @@
 <?php
 use Twilio\Rest\Client;
 
-$message = $_POST['message'];
-$sender_number = $_POST['sender_number'];
+
 function that()
 {
+  $message = $_POST['message'];
+  $sender_number = $_POST['sender_number'];
   require __DIR__ . '/twilio-php-main/src/Twilio/autoload.php';
 
 

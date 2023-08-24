@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title></title>
+<title>Report</title>
 
 <head>
     <?php include('../connect.php') ?>
@@ -22,7 +22,7 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Datatables</h5>
+                    <h5 class="card-title">Reports</h5>
                     <p>Add lightweight datatables to your project with using the <a
                             href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple
                             DataTables</a> library.
